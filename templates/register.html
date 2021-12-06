@@ -5,7 +5,7 @@
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">    
 	
 </head>    
-<body>    
+<body style="text-align: center; background-color:#FF851B">    
     <h2>REGISTRATION PAGE</h2><br>    
     <div class="signin">    
     <form name="f1" id="signin" method="post" action="/addUser" onsubmit="return validate()">    
@@ -13,6 +13,7 @@
      {% if error %}
     <p>{{ error }}</p>
     {% endif %}<br>
+	<br>
 	</div>
       <label><b>FirstName    
         </b>    
@@ -26,14 +27,14 @@
         <br><br>   
 		
 		<label><b>Email Id    
-        </b><br> 
+        </b>
         </label>    
         <input type="text" name="email" id="email" placeholder="Enter Email">		
         <br><br> 
-        <label><b>UserName    
-        </b><br> 
+        <label><b>Username    
+        </b>
         </label>    
-        <input type="text" name="username" id="username" placeholder="Enter username">		
+        <input type="text" name="username" id="Uname" placeholder="Enter username">		
         <br><br> 
         <label><b>Password     
         </b>    

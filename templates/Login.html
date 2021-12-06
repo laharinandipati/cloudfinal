@@ -3,9 +3,8 @@
 <head>    
     <title>LOGIN PAGE</title>    
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">    
-	
 </head>    
-<body>    
+<body style="text-align: center; background-color:#FF851B">    
     <h2>LOGIN PAGE</h2><br>    
     <div class="login">    
     <form name="f1" id="login" method="POST" action="/loginValidation" ">    
@@ -17,6 +16,7 @@
     {% if msg %}
     <p>{{ msg }}</p>
     {% endif %}<br>
+	<br>
 	</div>
 	
        <label><b>Username    
