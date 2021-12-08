@@ -31,7 +31,7 @@ config = {
   'port': 3306,
   'ssl_ca': os.path.join(dir_path, 'BaltimoreCyberTrustRoot.crt.pem'),
   'ssl_verify_cert': 'true',
-  'connect_timeout':50
+  'connect_timeout':172800
 }
 
 # Construct connection string
