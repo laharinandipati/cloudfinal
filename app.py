@@ -30,8 +30,7 @@ config = {
   'database':'ccdatabase',
   'port': 3306,
   'ssl_ca': os.path.join(dir_path, 'BaltimoreCyberTrustRoot.crt.pem'),
-  'ssl_verify_cert': 'true',
-  'connect_timeout':172800
+  'ssl_verify_cert': 'true'
 }
 
 # Construct connection string
