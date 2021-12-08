@@ -74,7 +74,7 @@ def login_validation():
     usersss=cursor.fetchone()
     conn.commit()
     if usersss != None :
-        sql_select_query = "select h.hshd_num, t.basket_num,t.product_num,t.purchase_,p.department,p.commodity,t.spend,t.units,t.store_r,t.week_num,t.year,h.L,h.age_range,h.marital,h.income_range,h.homeowner,h.hshd_composition,h.hh_size,h.children from households as h,transactions as t , products as p where h.hshd_num=t.hshd_num and t.product_num=p.product_num order by h.hshd_num,t.BASKET_NUM,t.purchase_,t.PRODUCT_NUM,p.DEPARTMENT,p.COMMODITY"
+        sql_select_query = "select h.hshd_num, t.basket_num,t.product_num,t.purchase_,p.department,p.commodity,t.spend,t.units,t.store_r,t.week_num,t.year,h.L,h.age_range,h.marital,h.income_range,h.homeowner,h.hshd_composition,h.hh_size,h.children from households as h,transactions as t , products as p where h.hshd_num=t.hshd_num and t.product_num=p.product_num and h.hshd_num=10 order by h.hshd_num,t.BASKET_NUM,t.purchase_,t.PRODUCT_NUM,p.DEPARTMENT,p.COMMODITY"
         cursor.execute(sql_select_query)
         data = cursor.fetchall()
         #conn.close()
